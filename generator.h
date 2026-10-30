@@ -23,4 +23,6 @@ public:
     void processSineWave(AudioBuffer& buffer) noexcept;
 };
 
+int test();
+
 #endif // GENERATOR_H
