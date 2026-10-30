@@ -31,7 +31,7 @@ public:
 		std::fill(rightChannel, rightChannel + frameCount, 0.0f);
 	}
 	AudioBuffer(const AudioBuffer&) = delete; // only ONE may exist! no copying
-
+	AudioBuffer& operator=(const AudioBuffer&) = delete; // only ONE may exist! no copying
 };
 
 #endif // AUDIOBUFFER_H
